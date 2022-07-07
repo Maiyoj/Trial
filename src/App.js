@@ -7,13 +7,14 @@ import Todo from './components/Todo';
 function App() {
 
   const [inputText, setInput] = useState("");
+  const [todos, setTodos] = useState("[]");
 
   return (
     <div className="App">
     <header>
-      <h1>Valentines To do list{inputText}</h1>
+      <h1>Valentines To do list</h1>
     </header>
-    <Form setInput={setInput}/>
+    <Form inputText={inputText} todos={todos} setTodos={setTodos} setInput={setInput}/>
     <Todo />
     </div>
   );
