@@ -7,13 +7,13 @@ import Todo from './components/Todo';
 function App() {
 
   const [inputText, setInput] = useState("");
-  
+
   return (
     <div className="App">
     <header>
-      <h1>Valentines To do list</h1>
+      <h1>Valentines To do list{inputText}</h1>
     </header>
-    <Form />
+    <Form setInput={setInput}/>
     <Todo />
     </div>
   );
