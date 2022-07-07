@@ -22,7 +22,7 @@ const handleSubmit = (e) =>{
 
     return(
         <form>
-      <input onChange={inputHandler} type="text" className="todo-input" />
+      <input value={inputText} onChange={inputHandler} type="text" className="todo-input" />
       <button onClick={handleSubmit} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
