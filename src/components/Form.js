@@ -15,9 +15,10 @@ const handleSubmit = (e) =>{
     ...todos, {
       text:inputText, completed: false,  id: Math.random() *1000
     }
-  ])
+  ]);
+ setInput("");
 
-}
+};
 
     return(
         <form>
@@ -34,6 +35,7 @@ const handleSubmit = (e) =>{
       </div>
     </form>
     );
+ 
 };
 
 export default Form;
