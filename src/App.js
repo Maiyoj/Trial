@@ -7,7 +7,7 @@ import Todo from './components/Todo';
 function App() {
 
   const [inputText, setInput] = useState("");
-  const [todos, setTodos] = useState("[]");
+  const [todos, setTodos] = useState([]);
 
   return (
     <div className="App">
@@ -15,7 +15,7 @@ function App() {
       <h1>Valentines To do list</h1>
     </header>
     <Form inputText={inputText} todos={todos} setTodos={setTodos} setInput={setInput}/>
-    <Todo />
+    <Todo todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
